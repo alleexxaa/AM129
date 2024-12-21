@@ -1,0 +1,17 @@
+#<Part a:>
+sort roster.txt > roster_sort_lastName.txt
+sed 's/\ .*//'  roster_sort_lastName.txt > roster_sort_lastName_lastName.txt 
+sed 's/ [^ ]*//2'  roster_sort_lastName.txt > roster_sort_lastName_firstLastNames.txt
+sed 's/^[^ ]* / /' roster_sort_lastName.txt > roster_sort_lastName_firstNameEmail.txt
+
+#<Part b:>
+sort -k2 roster.txt > roster_sort_firstName.txt
+sed 's/^[^ ]* / /' roster_sort_firstName.txt > roster_sort_firstName_firstName.txt
+sed 's/ [^ ]*//2'  roster_sort_firstName.txt > roster_sort_firstName_firstLastNames.txt
+sed 's/ [^ ]* / /' roster_sort_firstName.txt > roster_sort_firstName_lastNameEmail.txt 
+
+#<Part c:>
+sort roster.txt | uniq > roster_sort_lastName_noDuplicate.txt
+
+#<Part d:> 
+cat roster_sort_lastName_noDuplicate.txt | wc -l
