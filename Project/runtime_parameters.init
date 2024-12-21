@@ -1,0 +1,10 @@
+sim_N 128
+sim_a 1.0
+sim_C 1.0
+sim_k 1.156
+sim_e 0.000001
+t_max 1.0
+a_or_d 0
+ic_type continuous
+method upwind
+write_interval 0.1

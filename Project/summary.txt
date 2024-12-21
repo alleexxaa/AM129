@@ -1,0 +1,13 @@
+Project C Summary
+
+The main goal of this project is to find solutions for the linear advection equation with certain conditions set to the constants. The Fortran section is where
+most of the code will live. In this section, I will have to discretize, enforce initial conditions and boundary conditions for the advection part and diffusion
+parts of the linear advection equation. The Python section requires me to make different figures with multiple graphs in them. 
+
+1. Find solutions to 1D diffusion equation
+2. Find solutions to 1D advection equation
+3. Create plots for solutions at specific times
+4. Create plots for initial conditions
+5. Create plots for initial profile and final profiles.
+6. Write the report with abstract, body, figures, and conclusion
+7. Solve full advection and diffusion equation using the splitting method
